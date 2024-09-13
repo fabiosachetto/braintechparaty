@@ -53,4 +53,15 @@ function pesquisar() {
         // Exibe os resultados da pesquisa na seção HTML
         section.innerHTML = resultados;
     };
-}
+};
+
+// Obtém o elemento de input
+const campoPesquisa = document.getElementById("campo-pesquisa");
+
+// Adiciona um ouvinte de eventos ao campo de pesquisa
+campoPesquisa.addEventListener('keydown', (event) => {
+    // Verifica se a tecla pressionada é Enter (código 13)
+    if (event.keyCode === 13) {
+        pesquisar();
+    }
+});
