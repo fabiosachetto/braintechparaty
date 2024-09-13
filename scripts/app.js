@@ -39,7 +39,7 @@ function pesquisar() {
                     <p class="descricao-meta">Especialidades: ${dado.descricao}</p>
                     <p class="descricao-meta">Tempo de Profissão: ${dado.temponapista}</p>
                     <p class="descricao-meta">Idade: ${dado.idade}</p>
-                    <a href="${dado.celular}" target="_blank" class="descricao-meta">Chama!!!</a>
+                    <a href="${dado.celular}" target="_blank" class="descricao-meta">Clique aqui para entrar em contato comigo.</a>
                 </div>
                 `; 
             };
