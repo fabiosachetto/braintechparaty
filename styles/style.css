@@ -63,7 +63,7 @@ section button:hover {
 .resultados-pesquisa {
     display: block;
     width: 60rem; /* Largura máxima da caixa de resultados */
-    min-height: 28vh; /* Altura máxima da caixa de resultados */
+    min-height: 20vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     /*margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     margin: 0 auto;
@@ -135,7 +135,7 @@ footer {
 
     .resultados-pesquisa {
         width: 40rem; /* Largura da caixa de resultados em telas menores */
-        height: 40vh; /* Altura da caixa de resultados em telas menores */
+        /* height: 40vh; Altura da caixa de resultados em telas menores */
     }
 
     .item-resultado h2 {
@@ -162,7 +162,7 @@ footer {
 
     .resultados-pesquisa {
         width: 90%; /* Largura da caixa de resultados em telas pequenas */
-        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+        /* height: 50vh; Altura da caixa de resultados em telas pequenas */
     }
 
     .item-resultado h2 {
