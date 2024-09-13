@@ -55,13 +55,21 @@ function pesquisar() {
     };
 };
 
-// Obtém o elemento de input
+
+
+// estudar o codigo abaixo
+
+
+// Obtém o elemento de input e o botão
 const campoPesquisa = document.getElementById("campo-pesquisa");
+const botaoPesquisar = document.getElementById("botao-pesquisar"); // Substitua pelo ID do seu botão
 
 // Adiciona um ouvinte de eventos ao campo de pesquisa
 campoPesquisa.addEventListener('keydown', (event) => {
-    // Verifica se a tecla pressionada é Enter (código 13)
     if (event.keyCode === 13) {
         pesquisar();
     }
 });
+
+// Adiciona um ouvinte de eventos ao botão (opcional, se você quiser manter o clique)
+botaoPesquisar.addEventListener('click', pesquisar);
