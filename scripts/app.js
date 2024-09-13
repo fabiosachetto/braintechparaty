@@ -34,11 +34,12 @@ function pesquisar() {
                 resultados += `
                 <div class="item-resultado">
                     <h2>
-                    <a href="#" target="_blank">${dado.titulo}</a>
+                        <a href="#" target="_blank">${dado.titulo}</a>
                     </h2>
                     <p class="descricao-meta">Especialidades: ${dado.descricao}</p>
                     <p class="descricao-meta">Tempo de Profissão: ${dado.temponapista}</p>
                     <p class="descricao-meta">Idade: ${dado.idade}</p>
+                    <a href="${dado.celular}" target="_blank" class="descricao-meta">Celular: ${dado.celular}</a>
                 </div>
                 `; 
             };
