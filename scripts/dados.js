@@ -56,7 +56,7 @@ let dados = [
     },
 
     {
-        titulo : "Alice (Dona do Ezequiel",
+        titulo : "Alice (Dona do Ezequiel)",
         descricao : "Motogirl e Farmaceutica",
         temponapista: "5 anos em Paraty",
         idade : 28,
