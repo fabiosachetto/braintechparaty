@@ -42,6 +42,27 @@ section input {
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
+
+#campo-pesquisa {
+    padding-left: 30px; /* Espaço para o ícone */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #campo-pesquisa::before {
+    content: "\f002"; /* Ícone de lupa do Font Awesome */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: fontAwesome;
+    font-size: 18px;
+    color: #999;
+  }
+
+
+  
+
 /* Estiliza os botões dentro das seções */
 section button {
     padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
