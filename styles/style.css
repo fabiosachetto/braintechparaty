@@ -5,7 +5,7 @@
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
     background-color: #0C0D0E; /* Cor de fundo da página */
-    display: flex; /* Usa Flexbox para layout */
+    /*display: flex;  Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
@@ -32,6 +32,10 @@ section {
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+.form-login {
+    display: contents;
 }
 
 /* Estiliza os inputs dentro das seções */
@@ -121,11 +125,9 @@ footer {
     padding: 1rem 0; /* Espaçamento interno */
     margin-top: 30px;
     width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
+    
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
-
-    display: none;
 }
 
 @media (max-width: 768px) {
