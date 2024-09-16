@@ -8,7 +8,15 @@ formLogin.addEventListener("submit", (event) => {
 
     // Simulando um banco de dados (substitua por sua lógica de verificação)
     const usuarios = [
-        { email: "fabio@sachetto.com.br", senha: "123" }
+        { 
+            email: "fabio@teste.com.br", senha: "palmeiras"
+        },
+        { 
+            email: "rodrigo@teste.com.br", senha: "corinthians"
+        },
+        { 
+            email: "caue@teste.com.br", senha: "casapizza"
+        }
     ];
 
     let usuarioEncontrado = false;
