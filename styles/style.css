@@ -15,11 +15,15 @@ body {
 }
 
 /* Estiliza os títulos h1 */
-h1 {
+h1, h2 {
     font-size: 2.5rem; /* Tamanho da fonte */
     color: #222831; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+
+h2 {
+    color: red;
 }
 
 /* Estiliza as seções da página */
@@ -31,6 +35,7 @@ section {
 }
 
 /* Estiliza os inputs dentro das seções */
+header .form-login input,
 section input {
     width: 30rem; /* Largura dos inputs */
     border: none; /* Remove a borda padrão */
@@ -42,26 +47,21 @@ section input {
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
+header .form-login {
+    overflow: hidden;   
+    width: 30rem;
+    margin: 0 auto;
+}
 
-#campo-pesquisa {
-    padding-left: 30px; /* Espaço para o ícone */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  #campo-pesquisa::before {
-    content: "\f002"; /* Ícone de lupa do Font Awesome */
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: fontAwesome;
-    font-size: 18px;
-    color: #999;
-  }
+header .form-login input {
+    clear: both;
+    float: left;
+}
 
-
-  
+header .form-login button {
+    clear: both;
+    float: left;
+}
 
 /* Estiliza os botões dentro das seções */
 section button {
@@ -138,7 +138,7 @@ footer {
     padding: 1rem 0; /* Espaçamento interno */
     margin-top: 30px;
     width: 100%; /* Largura total da página */
-    /*position: absolute; /* Posiciona o rodapé */
+    position: absolute; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
 }
