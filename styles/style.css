@@ -53,13 +53,9 @@ header .form-login input {
     float: left;
 }
 
-header .form-login button {
-    clear: both;
-    float: left;
-}
-
 /* Estiliza os botões dentro das seções */
-section button {
+section button,
+header .form-login button {
     padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
     border-radius: 1.5rem; /* Borda arredondada */
@@ -67,6 +63,11 @@ section button {
     color: #F5F7F8; /* Cor do texto do botão */
     font-size: 1rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+header .form-login button {
+    clear: both;
+    float: left;
 }
 
 /* Adiciona efeito hover ao botão de pesquisa */
@@ -136,6 +137,8 @@ footer {
     position: absolute; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
+
+    display: none;
 }
 
 @media (max-width: 768px) {
