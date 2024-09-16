@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Moto Entrega Paraty</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous"/>
+        
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
@@ -14,25 +14,21 @@
                     <img src="img/logo.png" alt="Moto Entrega Paraty" title="Moto Entrega Paraty">
                 </a>
             </h1>
+
+            <form class="form-login" id="form-login">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+                <button type="submit">Entrar</button>
+            </form>
         </header>
-
-        <main>
-            <section id="mostrando-pesquisa">
-                <input type="text" placeholder="Digite o nome do motoboy!!!" id="campo-pesquisa" autofocus>
-                <!-- <button onclick="pesquisar()">Pesquisar</button> -->
-                <button id="botao-pesquisar">Pesquisar</button>
-            </section>
-
-            <section class="resultados-pesquisa" id="resultados-pesquisa">
-                
-            </section>
-        </main>
 
         <footer>
             <p>2024 - Moto Entrega Paraty. Todos os direitos reservados.</p>
             <section>
                 <span>
-                    Clique no link ao lado para entrar em contato com a gente!
+                    Clique no link abaixo para entrar em contato com a gente!
                 </span>
 
                 <a title="motoentregaparaty@motoentregaparaty.com.br" href="mailto:motoentregaparaty@motoentregaparaty.com.br">
@@ -40,7 +36,6 @@
                 </a>
             </section>
         </footer>
-        <script src="scripts/dados.js"></script>
-        <script src="scripts/app.js"></script>
+        <script src="scripts/login.js"></script>
     </body>
 </html>
