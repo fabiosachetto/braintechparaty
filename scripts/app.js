@@ -33,9 +33,9 @@ function pesquisar() {
                 // Adiciona um novo elemento HTML com os detalhes do dado aos resultados
                 resultados += `
                 <div class="item-resultado">
-                    <h2>
+                    <h3>
                         <a href="#" target="_blank">${dado.titulo}</a>
-                    </h2>
+                    </h3>
                     <p class="descricao-meta">Especialidades: ${dado.descricao}</p>
                     <p class="descricao-meta">Tempo de Profissão: ${dado.temponapista}</p>
                     <p class="descricao-meta">Idade: ${dado.idade}</p>
@@ -55,10 +55,7 @@ function pesquisar() {
     };
 };
 
-
-
 // estudar o codigo abaixo
-
 
 // Obtém o elemento de input e o botão
 const campoPesquisa = document.getElementById("campo-pesquisa");
