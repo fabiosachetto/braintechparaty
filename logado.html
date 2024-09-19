@@ -18,9 +18,8 @@
 
         <main>
             <section id="mostrando-pesquisa">
-                <h2>Seja bem vindo. Digite abaixo quem você deseja procurar.</h2>
+                <h2>Seja bem vindo <span id="nome-usuario-exibido"></span>. Digite abaixo quem você deseja procurar.</h2>
                 <input type="text" placeholder="Digite o nome do motoboy!!!" id="campo-pesquisa" autofocus>
-                <!-- <button onclick="pesquisar()">Pesquisar</button> -->
                 <button id="botao-pesquisar">Pesquisar</button>
             </section>
 
@@ -43,5 +42,10 @@
         </footer>
         <script src="scripts/dados.js"></script>
         <script src="scripts/app.js"></script>
+        <script>
+            const nomeUsuario = localStorage.getItem("nomeUsuario");
+            const nomeUsuarioExibido = document.getElementById("nome-usuario-exibido");
+            nomeUsuarioExibido.textContent = nomeUsuario;
+        </script>
     </body>
 </html>
