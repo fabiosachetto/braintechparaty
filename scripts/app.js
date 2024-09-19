@@ -1,7 +1,5 @@
 function pesquisar() {
 
-    
-
     // Obtém o valor digitado pelo usuário no campo de pesquisa
     let campoPesquisa = document.getElementById("campo-pesquisa").value;
     
