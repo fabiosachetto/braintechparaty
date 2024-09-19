@@ -1,9 +1,12 @@
 function pesquisar() {
-    // Seleciona a seção HTML onde os resultados da pesquisa serão exibidos
-    let section = document.getElementById("resultados-pesquisa");
+
+    
 
     // Obtém o valor digitado pelo usuário no campo de pesquisa
     let campoPesquisa = document.getElementById("campo-pesquisa").value;
+    
+    // Seleciona a seção HTML onde os resultados da pesquisa serão exibidos
+    let section = document.getElementById("resultados-pesquisa");
 
     // Inicializa uma string vazia para armazenar os resultados da pesquisa
     let resultados = "";
