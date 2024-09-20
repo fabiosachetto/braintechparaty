@@ -19,6 +19,9 @@ formLogin.addEventListener("submit", (event) => {
         },
         { 
             email: "caue@teste.com.br", senha: "casapizza", nomeUsuarioExibido: "Cauê"
+        },
+        { 
+            email: "rick@teste.com.br", senha: "quintaavenida", nomeUsuarioExibido: "Rick"
         }
     ];
 
