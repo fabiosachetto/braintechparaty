@@ -1,5 +1,6 @@
 /* Importa a fonte Chakra Petch do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 /* Estiliza o corpo da página */
 body {
@@ -23,7 +24,7 @@ h1, h2 {
 }
 
 h2 {
-    color: red;
+    color: #fff;
     font-size: 1.5rem;
 }
 
@@ -66,6 +67,24 @@ section button {
 section button:hover {
     background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+main section .nome-logado {
+  font-family: 'Dancing Script', cursive;
+  animation: fadeInUp 2s ease-in-out;
+  color: #F3802B;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY();
+
+  }
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
@@ -182,4 +201,3 @@ footer {
         font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
     }
 }
-
