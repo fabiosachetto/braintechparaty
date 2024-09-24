@@ -35,6 +35,9 @@ formLogin.addEventListener("submit", (event) => {
         },
         { 
             email: "saulao@teste.com.br", senha: "12345", nomeUsuarioExibido: "Saulo"
+        },
+        { 
+            email: "davi@teste.com.br", senha: "12345", nomeUsuarioExibido: "Davi Dona Ká"
         }
     ];
 
