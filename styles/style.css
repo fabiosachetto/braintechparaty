@@ -36,9 +36,20 @@ section {
     margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
 }
 
-.form-login {
+.formulario-login .form-login {
     display: contents;
 }
+
+.formulario-login a {
+    color: #9270D7;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.formulario-login a:hover {
+    text-decoration: underline;
+}
+
 
 /* Estiliza os inputs dentro das seções */
 section input {
@@ -72,7 +83,7 @@ section button:hover {
 main section .nome-logado {
   font-family: 'Dancing Script', cursive;
   animation: fadeInUp 2s ease-in-out;
-  color: #F3802B;
+  color: #9270D7;
 }
 
 @keyframes fadeInUp {
@@ -201,3 +212,4 @@ footer {
         font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
     }
 }
+
