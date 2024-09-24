@@ -29,6 +29,12 @@ formLogin.addEventListener("submit", (event) => {
         },
         { 
             email: "rick@teste.com.br", senha: "quintaavenida", nomeUsuarioExibido: "Rick"
+        },
+        { 
+            email: "lucao@teste.com.br", senha: "12345", nomeUsuarioExibido: "Lucão"
+        },
+        { 
+            email: "saulao@teste.com.br", senha: "12345", nomeUsuarioExibido: "Saulo"
         }
     ];
 
@@ -54,3 +60,4 @@ formLogin.addEventListener("submit", (event) => {
         alert("Email ou senha inválidos.");
     };
 });
+
