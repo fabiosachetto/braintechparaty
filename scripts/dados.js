@@ -8,6 +8,22 @@ let dados = [
     },
 
     {
+        titulo : "Lucão",
+        descricao : "Motoboy, Correria e mais e mais coisas.",
+        temponapista: "5 anos em Paraty",
+        idade : 45,
+        celular: "https://wa.me/+5524000000000"
+    },
+
+    {
+        titulo : "Saulão",
+        descricao : "Motoboy e Serralheiro Nato.",
+        temponapista: "5 anos em Paraty",
+        idade : 45,
+        celular: "https://wa.me/+5524000000000"
+    },
+
+    {
         titulo : "Rodrigo",
         descricao : "Motoboy, Bala de Infra em T.I.",
         temponapista: "7 anos em Paraty",
