@@ -34,7 +34,8 @@ function pesquisar() {
             };
 
             // Verifica se o título do dado começa com a letra pesquisada, ignorando acentos e caixa alta/baixa.
-            if (removerAcentos(dado.titulo.toLowerCase()).startsWith(removerAcentos(campoPesquisa.toLowerCase()))) {
+            if (removerAcentos(dado.descricao.toLowerCase()).includes(removerAcentos(campoPesquisa.toLowerCase()))) {
+            //if (removerAcentos(dado.descricao.toLowerCase()).startsWith(removerAcentos(campoPesquisa.toLowerCase()))) {
                 // Se a pesquisa corresponder, cria um novo elemento HTML para exibir os resultados.
                 resultados += `
                 <div class="item-resultado">
