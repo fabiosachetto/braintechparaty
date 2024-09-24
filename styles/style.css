@@ -5,7 +5,7 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #0C0D0E; /* Cor de fundo da página */
+    background-color: #160F27; /* Cor de fundo da página */
     /*display: flex;  Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -13,6 +13,11 @@ body {
     height: 100vh; /* Preenche a altura total da viewport */
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
+}
+
+header h1 a img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Estiliza os títulos h1 */
@@ -162,9 +167,17 @@ footer {
 }
 
 @media (max-width: 768px) {
+
     h1 {
         font-size: 2rem; /* Tamanho da fonte em telas menores */
         letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+    }
+
+    /* Estilos para telas com largura máxima de 768px (por exemplo, tablets) */
+    header h1 a img {
+        /* Aqui você pode adicionar estilos específicos para dispositivos móveis, como: */
+        margin: 10px auto;
+        border-radius: 10px;
     }
 
     section input {
