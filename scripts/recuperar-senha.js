@@ -20,7 +20,8 @@ const usuarios = [
   { email: "rick@teste.com.br", senha: "quintaavenida", nomeUsuarioExibido: "Rick" },
   { email: "lucao@teste.com.br", senha: "12345", nomeUsuarioExibido: "Lucão" },
   { email: "saulao@teste.com.br", senha: "12345", nomeUsuarioExibido: "Saulo" },
-  { email: "davi@teste.com.br", senha: "12345", nomeUsuarioExibido: "Davi Dona Ká" }
+  { email: "davi@teste.com.br", senha: "12345", nomeUsuarioExibido: "Davi Dona Ká" },
+  { email: "fabio@sachetto.com.br", senha: "beatriz@2012", nomeUsuarioExibido: "Fábio Sachetto" }
 ]
 
 // Função para verificar se o email existe no array de usuários
