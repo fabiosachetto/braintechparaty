@@ -8,186 +8,34 @@ let dados = [
     },
 
     {
-        titulo : "Lucão",
-        descricao : "Motoboy, Correria e mais e mais coisas.",
-        temponapista: "5 anos em Paraty",
-        idade : 45,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Saulão",
-        descricao : "Motoboy e Serralheiro Nato.",
-        temponapista: "5 anos em Paraty",
-        idade : 45,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Rodrigo",
-        descricao : "Motoboy, Bala de Infra em T.I.",
-        temponapista: "7 anos em Paraty",
+        titulo : "Renan",
+        descricao : "Empreendedor e Jogador de CS.",
+        temponapista: "40 anos em Paraty",
         idade : 40,
         celular: "https://wa.me/+5524000000000"
     },
 
     {
-        titulo : "Fabulo",
-        descricao : "Motoboy, Garçom e Capoeirista.",
-        temponapista: "10 anos em Paraty",
-        idade : 30,
+        titulo : "Thiago Adriano",
+        descricao : "Professor de .NET na FIAP, Empreendedor e Mentor no nosso Grupo.",
+        temponapista: "?",
+        idade : "?",
         celular: "https://wa.me/+5524000000000"
     },
 
     {
-        titulo : "André - Capacete na Testa",
-        descricao : "Motoboy, jogador do Cirrose FC",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Cauê Casa Pizza",
-        descricao : "Pizzaiolo, Empreendedor, Marinheiro",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Alan Palmeiras",
-        descricao : "Motoboy, Empreendedor e ex-cachaceiro",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Alexandre Diniz",
-        descricao : "Motoboy e Bicicleteiro",
-        temponapista: "5 anos em Paraty",
-        idade : 18,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Alice (Dona do Ezequiel)",
-        descricao : "Motogirl e Farmaceutica",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "André da Crosser",
-        descricao : "Motoboy e Ator na Família Addams",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Cesar",
-        descricao : "Motoboy",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Davi",
-        descricao : "Motoboy, Empreendedor e Paizão",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Davizinho",
-        descricao : "Motoboy, Muleke Doido e Vendedor de Terreno.",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Gilson",
-        descricao : "Motoboy.",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Jonathan",
-        descricao : "Motoboy",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Lucas",
-        descricao : "Motoboy e Mecânico.",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Marco ou Marcos Aurélio",
-        descricao : "Motoboy e Gerente do Mercado doKekeu",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Moisés",
-        descricao : "Motoboy",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Portugal",
-        descricao : "Motoboy",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Rafael - Esfiharia Pacheco",
-        descricao : "Motoboy e Empreendedor",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Rafael Vila",
-        descricao : "Motoboy",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
+        titulo : "Gabriel",
+        descricao : "Programador Full-Stack e Mentor no nosso Grupo.",
+        temponapista: "?",
+        idade : "?",
         celular: "https://wa.me/+5524000000000"
     },
 
     {
         titulo : "Rick",
         descricao : "Motoboy, Dono do Ogami Sushi e Lutador de Muay Thay",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
+        temponapista: "?",
+        idade : "?",
         celular: "https://wa.me/+5524000000000"
-    },
-
-    {
-        titulo : "Sergio",
-        descricao : "Motoboy e Empreendedor do Yakisoba Paraty",
-        temponapista: "5 anos em Paraty",
-        idade : 28,
-        celular: "https://wa.me/+5524000000000"
-    },
+    }
 ];
