@@ -7,8 +7,9 @@ function validateEmail(email) {
 }
 
 function sendEmail(email) {
-  // Simulação de envio de email
-  console.log(`Enviando e-mail para recuperação de senha: ${email}`);
+  // armazenando email digitado para conferir
+  localStorage.setItem("EMAIL DO FULANO", email);
+  
   alert("E-mail enviado para recuperação de senha! (Simulação)"); // Mensagem de simulação
 }
 
@@ -40,7 +41,7 @@ form.addEventListener("submit", (event) => {
   }
 
   if (!validateEmail(email)) {
-    alert("Por favor, digite um e-mail válido!");
+    alert("O formato do e-mail é inválido.");
     return;
   }
 
