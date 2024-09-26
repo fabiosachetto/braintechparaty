@@ -158,12 +158,21 @@ footer {
     background-color: #F5F7F8; /* Cor de fundo do rodapé */
     color: #45474B; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
-    padding: 1rem 0; /* Espaçamento interno */
-    margin-top: 30px;
+    padding: 1rem 0 0 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
+}
+
+footer a {
+    font-weight: bold;
+    color: #9270D7;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -176,8 +185,8 @@ footer {
     /* Estilos para telas com largura máxima de 768px (por exemplo, tablets) */
     header h1 a img {
         /* Aqui você pode adicionar estilos específicos para dispositivos móveis, como: */
-        margin: 10px auto;
-        border-radius: 10px;
+        margin: 0 auto;
+        max-width: 80%;
     }
 
     section input {
