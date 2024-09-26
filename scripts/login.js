@@ -18,14 +18,11 @@ formLogin.addEventListener("submit", (event) => {
 
     // Array de objetos representando os usuários registrados (simulado).
     const usuarios = [
-        { email: "fabio@teste.com.br", senha: "123", nomeUsuarioExibido: "Fábio Verdi" },
-        { email: "rodrigo@teste.com.br", senha: "corinthians", nomeUsuarioExibido: "Rodrigo" },
-        { email: "caue@teste.com.br", senha: "casapizza", nomeUsuarioExibido: "Cauê" },
+        { email: "fabio@teste.com.br", senha: "palmeiras", nomeUsuarioExibido: "Fábio Verdi" },
+        { email: "renan@teste.com.br", senha: "flamengo", nomeUsuarioExibido: "Renan" },
+        { email: "thiago@teste.com.br", senha: "thiagomentor", nomeUsuarioExibido: "Thiago Mentor" },
         { email: "rick@teste.com.br", senha: "quintaavenida", nomeUsuarioExibido: "Rick" },
-        { email: "lucao@teste.com.br", senha: "12345", nomeUsuarioExibido: "Lucão" },
-        { email: "saulao@teste.com.br", senha: "12345", nomeUsuarioExibido: "Saulo" },
-        { email: "davi@teste.com.br", senha: "12345", nomeUsuarioExibido: "Davi Dona Ká" },
-        { email: "fabio@sachetto.com.br", senha: "beatriz@2012", nomeUsuarioExibido: "Fábio Sachetto" }
+        { email: "gabriel@teste.com.br", senha: "gabrielmentor", nomeUsuarioExibido: "Grabriel Mentor" }
     ];
 
     // Inicializa uma variável para armazenar o nome do usuário encontrado, se houver.
@@ -50,3 +47,4 @@ formLogin.addEventListener("submit", (event) => {
         alert("E-mail ou senha inválidos.");
     };
 });
+
