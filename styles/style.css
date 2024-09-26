@@ -15,11 +15,6 @@ body {
     padding: 0; /* Remove o padding padrão */
 }
 
-header h1 a img {
-    max-width: 100%;
-    height: auto;
-}
-
 /* Estiliza os títulos h1 */
 h1, h2 {
     font-size: 2.5rem; /* Tamanho da fonte */
@@ -31,6 +26,15 @@ h1, h2 {
 h2 {
     color: #fff;
     font-size: 1.5rem;
+}
+
+header h1 a {
+    display: block;
+}
+
+header h1 a img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Estiliza as seções da página */
@@ -56,8 +60,9 @@ section {
 }
 
 
-/* Estiliza os inputs dentro das seções */
-section input {
+/* Estiliza os inputs e selects dentro das seções */
+section input,
+main section form select {
     width: 30rem; /* Largura dos inputs */
     border: none; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
@@ -151,6 +156,12 @@ main section .nome-logado {
     color: red;
     font-weight: bold;
     text-align: center;
+}
+
+.label-area-atuacao,
+.label-termos {
+    color: #fff;
+    margin-bottom: 10px;
 }
 
 /* Estiliza o rodapé da página */
