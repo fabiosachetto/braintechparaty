@@ -44,7 +44,14 @@ formLogin.addEventListener("submit", (event) => {
         window.location.href = "logado.html";
     } else {
         // Se as credenciais forem inválidas, exibe uma mensagem de erro.
-        alert("E-mail ou senha inválidos.");
+        //alert("E-mail ou senha inválidos.");
+
+        Swal.fire({
+            title: 'Algo deu errado!',
+            text: 'Confira se seu e-mail ou sua senha estão corretos.',
+            icon: 'error',
+            confirmButtonText: 'OK'
+        });
     };
 });
 
