@@ -54,4 +54,3 @@ formLogin.addEventListener("submit", (event) => {
         });
     };
 });
-
