@@ -17,12 +17,24 @@ function pesquisar() {
     // Verifica se o campo de pesquisa está vazio.
     if (campoPesquisa.trim() === "") {
         // Se estiver vazio, exibe uma mensagem de erro informando o usuário.
-        section.innerHTML = "<p class='alerta'>Vc não digitou nada!!!</p>";
-        return;
+        // section.innerHTML = "<p class='alerta'>Vc não digitou nada!!!</p>";
+        // return;
+        Swal.fire({
+            title: 'Ops!!!',
+            text: 'Vc não digitou nada!!!',
+            icon: 'error',
+            confirmButtonText: 'OK'
+        });
     } else if (!regex.test(campoPesquisa)) {
         // Se a entrada contiver caracteres inválidos (não letras), exibe uma mensagem de erro.
-        section.innerHTML = "<p class='alerta'>Digite apenas letras.</p>";
-        return;
+        // section.innerHTML = "<p class='alerta'>Digite apenas letras.</p>";
+        // return;
+        Swal.fire({
+            title: 'Ops!!!',
+            text: 'Digite apenas letras. Números e caracteres especias não serão encontrados.',
+            icon: 'error',
+            confirmButtonText: 'OK'
+        });
     } else {
         // Itera sobre cada dado na lista de dados (assumindo que 'dados' é um array de objetos).
         for (let dado of dados) {
@@ -53,8 +65,14 @@ function pesquisar() {
 
         // Se nenhum resultado foi encontrado, exibe uma mensagem informando o usuário.
         if (!resultados) {
-            section.innerHTML = "<p class='alerta'>O que você digitou não foi encontrado!!!</p>";
-            return;
+            //section.innerHTML = "<p class='alerta'>O que você digitou não foi encontrado!!!</p>";
+            // return;
+            Swal.fire({
+                title: 'Ops!!!',
+                text: 'A profissão/função digitada não foi encontrada!!!',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
         };
 
         // Exibe os resultados da pesquisa na seção HTML.
