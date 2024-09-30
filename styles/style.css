@@ -214,6 +214,12 @@ footer a:hover {
     }
 }
 
+/*plugin popup*/
+.swal2-actions .swal2-confirm.swal2-styled a {
+    color: #fff;
+    text-decoration: none;
+}
+
 
 /* @media (max-width: 480px) {
 
