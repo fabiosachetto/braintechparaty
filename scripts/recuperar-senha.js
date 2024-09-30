@@ -1,24 +1,6 @@
 const form = document.getElementById("form-login");
 const emailInput = document.getElementById("email");
 
-function sendEmail(email) {
-  // armazenando email digitado para conferir
-  localStorage.setItem("EMAIL DIGITADO E ENCONTRADO NO BANCO FAKE.", email);
-  
-  // alert("E-mail enviado para recuperação de senha! (Simulação). Você será redirecionado para a página de Login!"); 
-
-  // Mensagem de simulação
-  Swal.fire({
-    title: 'Boa!',
-    text: 'E-mail enviado para recuperação de senha! (Simulação). Você será redirecionado para a página de Login!',
-    icon: 'success',
-    confirmButtonText: 'OK'
-  });
-
-  // Redireciona o usuário para a página de sucesso.
-  window.location.href = "index.html";
-}
-
 // Array de objetos representando os usuários registrados (simulado).
 const usuarios = [
   { email: "fabio@teste.com.br", senha: "palmeiras", nomeUsuarioExibido: "Fábio Verdi" },
@@ -27,6 +9,7 @@ const usuarios = [
   { email: "rick@teste.com.br", senha: "quintaavenida", nomeUsuarioExibido: "Rick" },
   { email: "gabriel@teste.com.br", senha: "gabrielmentor", nomeUsuarioExibido: "Grabriel Mentor" }
 ]
+
 
 // Função para verificar se o email existe no array de usuários
 function emailExiste(email) {
@@ -52,18 +35,24 @@ form.addEventListener("submit", (event) => {
       confirmButtonText: 'OK'
     });
     return;
-  } else if (!validateEmail(email)) {
-    // alert("O formato do e-mail é inválido.");
-    Swal.fire({
-      title: 'Ops!',
-      text: 'O formato do e-mail é inválido.',
-      icon: 'error',
-      confirmButtonText: 'OK'
-    });
-    console.log('aeeeeeeeee');
-    return;
-  };
+  }
 
   sendEmail(email);
+
+  function sendEmail(email) {
+    // armazenando email digitado para conferir
+    localStorage.setItem("EMAIL DIGITADO E ENCONTRADO NO BANCO FAKE.", email);
+    
+    // alert("E-mail enviado para recuperação de senha! (Simulação). Você será redirecionado para a página de Login!"); 
+    
+    // Mensagem de simulação
+    Swal.fire({
+      title: 'Boa!',
+      text: 'E-mail enviado para recuperação de senha! (Simulação).',
+      icon: 'success',
+      confirmButtonText: '<a href="index.html">Clique aqui e volte para a página de inicial.</a>'
+    });
+  }
+
   form.reset(); // Limpa o formulário após o envio simulado
 });
