@@ -33,7 +33,15 @@ let dados = [
 
     {
         titulo : "Rick",
-        descricao : "Motoboy, Dono do Ogami Sushi e Lutador de Muay Thay",
+        descricao : "Motoboy, Empreendero do Ogami Sushi e Lutador de Muay Thay.",
+        temponapista: "?",
+        idade : "?",
+        celular: "https://wa.me/+5524000000000"
+    },
+
+    {
+        titulo : "Serginho",
+        descricao : "Motoboy, Empreendedor do Yakissoba Paraty e Gerente de Restaurante.",
         temponapista: "?",
         idade : "?",
         celular: "https://wa.me/+5524000000000"
