@@ -22,7 +22,8 @@ formLogin.addEventListener("submit", (event) => {
         { email: "renan@teste.com.br", senha: "flamengo", nomeUsuarioExibido: "Renan" },
         { email: "thiago@teste.com.br", senha: "thiagomentor", nomeUsuarioExibido: "Thiago Mentor" },
         { email: "rick@teste.com.br", senha: "quintaavenida", nomeUsuarioExibido: "Rick" },
-        { email: "gabriel@teste.com.br", senha: "gabrielmentor", nomeUsuarioExibido: "Grabriel Mentor" }
+        { email: "gabriel@teste.com.br", senha: "gabrielmentor", nomeUsuarioExibido: "Grabriel Mentor" },
+        { email: "serginho@teste.com.br", senha: "sergioyakissoba", nomeUsuarioExibido: "Serginho" }
     ];
 
     // Inicializa uma variável para armazenar o nome do usuário encontrado, se houver.
