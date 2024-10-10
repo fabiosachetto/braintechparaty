@@ -10,25 +10,21 @@ function pesquisar() {
     let resultados = "";
 
     // Cria uma expressão regular para validar se a entrada contém apenas letras.
-    // O sinal de "ˆ" indica o início da string, "$" o fim, e a classe de caracteres
-    // "a-zA-Z" representa qualquer letra maiúscula ou minúscula.
-    const regex = /^[a-zA-Z]+$/;
+    const regex = /[-a-zA-Z0-9]+/;
+    //const regex = /^[a-zA-Z0-9]{3,}$/;
 
     // Verifica se o campo de pesquisa está vazio.
     if (campoPesquisa.trim() === "") {
         // Se estiver vazio, exibe uma mensagem de erro informando o usuário.
-        // section.innerHTML = "<p class='alerta'>Vc não digitou nada!!!</p>";
-        // return;
         Swal.fire({
             title: 'Ops!!!',
             text: 'Vc não digitou nada!!!',
             icon: 'error',
             confirmButtonText: 'OK'
         });
+        //console.log('teste');
     } else if (!regex.test(campoPesquisa)) {
-        // Se a entrada contiver caracteres inválidos (não letras), exibe uma mensagem de erro.
-        // section.innerHTML = "<p class='alerta'>Digite apenas letras.</p>";
-        // return;
+        // Se a entrada contiver caracteres inválidos na variável regex, exibe uma mensagem de erro.
         Swal.fire({
             title: 'Ops!!!',
             text: 'Digite apenas letras. Números e caracteres especias não serão encontrados.',
@@ -45,9 +41,7 @@ function pesquisar() {
                 return str.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
             };
 
-            // Verifica se o título do dado começa com a letra pesquisada, ignorando acentos e caixa alta/baixa.
-            if (removerAcentos(dado.descricao.toLowerCase()).includes(removerAcentos(campoPesquisa.toLowerCase()))) {
-            //if (removerAcentos(dado.descricao.toLowerCase()).startsWith(removerAcentos(campoPesquisa.toLowerCase()))) {
+            if (removerAcentos(campoPesquisa.toLowerCase()).length >= 3 && removerAcentos(dado.descricao.toLowerCase()).includes(removerAcentos(campoPesquisa.toLowerCase()))) {
                 // Se a pesquisa corresponder, cria um novo elemento HTML para exibir os resultados.
                 resultados += `
                 <div class="item-resultado">
@@ -60,20 +54,49 @@ function pesquisar() {
                     <a href="${dado.celular}" target="_blank" class="descricao-meta">Clique aqui para entrar em contato comigo.</a>
                 </div>
                 `; 
+                // Se o usuário digitou pelo menos 3 caracteres e a pesquisa encontrou um resultado, execute o código
+                console.log('Pesquisa encontrada!');
+            } else if (!resultados) {
+                // Se o usuário digitou menos de 3 caracteres ou não encontrou resultados, execute outro código
+                Swal.fire({
+                    title: 'Ops!!!',
+                    text: 'Digite pelo menos 3 letras!!!',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                });
+                // Se o usuário não digitou pelo menos 3 caracteres da ruim
+                console.log('Digite pelo menos 3 letras!!!');
             };
+            
+            
+            // // Verifica se o título do dado começa com a letra pesquisada, ignorando acentos e caixa alta/baixa.
+            // if (removerAcentos(dado.descricao.toLowerCase()).includes(removerAcentos(campoPesquisa.toLowerCase()))) {
+            // 
+            //     // Se a pesquisa corresponder, cria um novo elemento HTML para exibir os resultados.
+            //     resultados += `
+            //     <div class="item-resultado">
+            //         <h3>
+            //             <a href="#" target="_blank">${dado.titulo}</a>
+            //         </h3>
+            //         <p class="descricao-meta">Especialidades: ${dado.descricao}</p>
+            //         <p class="descricao-meta">Tempo de Profissão: ${dado.temponapista}</p>
+            //         <p class="descricao-meta">Idade: ${dado.idade}</p>
+            //         <a href="${dado.celular}" target="_blank" class="descricao-meta">Clique aqui para entrar em contato comigo.</a>
+            //     </div>
+            //     `; 
+            // };
         };
 
         // Se nenhum resultado foi encontrado, exibe uma mensagem informando o usuário.
-        if (!resultados) {
-            //section.innerHTML = "<p class='alerta'>O que você digitou não foi encontrado!!!</p>";
-            // return;
-            Swal.fire({
-                title: 'Ops!!!',
-                text: 'A profissão/função digitada não foi encontrada!!!',
-                icon: 'error',
-                confirmButtonText: 'OK'
-            });
-        };
+        // if (!resultados) {
+        //     Swal.fire({
+        //         title: 'Ops!!!',
+        //         text: 'A profissão/função digitada não foi encontrada!!!',
+        //         icon: 'error',
+        //         confirmButtonText: 'OK'
+        //     });
+        // };
+
 
         // Exibe os resultados da pesquisa na seção HTML.
         section.innerHTML = resultados;
@@ -88,7 +111,8 @@ const botaoPesquisar = document.getElementById("botao-pesquisar"); // Substitua 
 
 // Adiciona um ouvinte de eventos ao campo de pesquisa
 campoPesquisa.addEventListener('keydown', (event) => {
-    if (event.keyCode === 13) {
+    if (event.keyCode === 30) {
+        console.log('teste');
         pesquisar();
     }
 });
