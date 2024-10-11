@@ -19,12 +19,11 @@ formLogin.addEventListener("submit", (event) => {
     // Array de objetos representando os usuários registrados (simulado).
     const usuarios = [
         { email: "fabio@teste.com.br", senha: "palmeiras", nomeUsuarioExibido: "Fábio Verdi" },
-        { email: "renan@teste.com.br", senha: "flamengo", nomeUsuarioExibido: "Renan" },
         { email: "thiago@teste.com.br", senha: "thiagomentor", nomeUsuarioExibido: "Thiago Mentor" },
         { email: "rick@teste.com.br", senha: "quintaavenida", nomeUsuarioExibido: "Rick" },
         { email: "gabriel@teste.com.br", senha: "gabrielmentor", nomeUsuarioExibido: "Grabriel Mentor" },
         { email: "serginho@teste.com.br", senha: "sergioyakissoba", nomeUsuarioExibido: "Serginho" },
-        { email: "fabianojsantana@teste.com.br", senha:"fabiojsantana", nomeUsuarioExibido: "Fabiano J. Santana"}
+        { email: "fabianojsantana@teste.com.br", senha: "fabiano", nomeUsuarioExibido: "Fabiano J. Santana"}
     ];
 
     // Inicializa uma variável para armazenar o nome do usuário encontrado, se houver.
@@ -56,4 +55,3 @@ formLogin.addEventListener("submit", (event) => {
         });
     };
 });
-
