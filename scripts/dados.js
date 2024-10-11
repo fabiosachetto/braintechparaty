@@ -1,7 +1,7 @@
 let dados = [
     {
         titulo : "Fábio Verdi Sachetto",
-        descricao : "Motoboy - Programador Front-End - Marceneiro - Serralheiro - Manutenção e Instalação de Ar-Condicionado.",
+        descricao : "Motoboy - Programador Front-End - Marceneiro - Serralheiro - Manutenção e Instalação de Ar-Condicionado e Empreendedor do Delivery Fome de Batata em Paraty",
         temponapista: "5 anos em Paraty",
         idade : 45,
         celular: "https://wa.me/+5524000000000"
