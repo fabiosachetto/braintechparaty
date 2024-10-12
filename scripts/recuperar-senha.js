@@ -8,7 +8,8 @@ const usuarios = [
   { email: "rick@teste.com.br", senha: "quintaavenida", nomeUsuarioExibido: "Rick" },
   { email: "gabriel@teste.com.br", senha: "gabrielmentor", nomeUsuarioExibido: "Grabriel Mentor" },
   { email: "serginho@teste.com.br", senha: "sergioyakissoba", nomeUsuarioExibido: "Serginho" },
-  { email: "fabianojsantana@teste.com.br", senha: "fabiano", nomeUsuarioExibido: "Fabiano J. Santana"}
+  { email: "fabianojsantana@teste.com.br", senha: "fabiano", nomeUsuarioExibido: "Fabiano J. Santana"},
+  { email: "ricardo@teste.com.br", senha: "ricardo123", nomeUsuarioExibido: "Ricardo Alves"}
 ];
 
 
