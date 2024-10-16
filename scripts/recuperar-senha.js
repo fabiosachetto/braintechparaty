@@ -9,19 +9,20 @@ const usuarios = [
   { email: "gabriel@teste.com.br", senha: "gabrielmentor", nomeUsuarioExibido: "Grabriel Mentor" },
   { email: "serginho@teste.com.br", senha: "sergioyakissoba", nomeUsuarioExibido: "Serginho" },
   { email: "fabianojsantana@teste.com.br", senha: "fabiano", nomeUsuarioExibido: "Fabiano J. Santana"},
-  { email: "ricardo@teste.com.br", senha: "ricardo123", nomeUsuarioExibido: "Ricardo Alves"}
+  { email: "ricardo@teste.com.br", senha: "ricardo123", nomeUsuarioExibido: "Ricardo Alves"},
+  { email: "igao@teste.com.br", senha: "igaodapop", nomeUsuarioExibido: "Igão"}
 ];
 
 
 // Função para verificar se o email existe no array de usuários
 function emailExiste(email) {
   return usuarios.some(usuario => usuario.email === email);
-}
+};
 
 function validateEmail(email) {
   const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
-}
+};
 
 form.addEventListener("submit", (event) => {
   event.preventDefault(); // Evita o envio padrão do formulário
@@ -54,7 +55,7 @@ form.addEventListener("submit", (event) => {
       icon: 'success',
       confirmButtonText: '<a href="index.html">Clique aqui e volte para a página de inicial.</a>'
     });
-  }
+  };
 
   form.reset(); // Limpa o formulário após o envio simulado
 });
